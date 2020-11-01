@@ -1,0 +1,27 @@
+# Routing input file
+# NAME OF FLOW DIRECTION FILE
+/home/vikram/H/basin_1/parameters/rout/flow_direction.txt
+# NAME OF VELOCITY FILE
+.false.
+0.50
+# NAME OF DIFF FILE
+.false.
+800
+# NAME OF XMASK FILE
+.false.
+12500
+# NAME OF FRACTION FILE
+.true.
+/home/vikram/H/basin_1/parameters/rout/area_fraction.txt
+# NAME OF STATION FILE
+/home/vikram/H/basin_1/parameters/rout/station_location.txt
+# PATH OF INPUT FILES AND PRECISION
+/home/vikram/H/basin_1/results_P5_T5/vic/base_s/fluxes_
+4
+# PATH OF OUTPUT FILES
+/home/vikram/H/basin_1/results_P5_T5/rout/base_s/
+# YEAR AND MONTH OF MODEL OUTPUT TO ROUTE & ROUTED OUTPUT TO WRITE
+1998 01 2015 12
+1998 01 2015 12
+# NAME OF UNIT HYDROGRAPH FILE
+/home/vikram/VIC/VIC_Himalayas/parameters/rout/UH.all

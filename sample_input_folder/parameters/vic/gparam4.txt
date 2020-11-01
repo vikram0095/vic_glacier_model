@@ -1,0 +1,79 @@
+#######################################################################
+# Simulation Parameters
+#######################################################################
+NLAYER                3      # number of soil layers
+NODES                 10     # number of soil thermal nodes
+TIME_STEP             24     # number of model time steps per day (set to 1 if FULL_ENERGY = FALSE, set to > 1 if FULL_ENERGY = TRUE)
+SNOW_STEP             24    
+STARTYEAR              	1998   # year model simulation starts 
+STARTMONTH             	01     # month model simulation starts 
+STARTDAY               	01   
+STARTHOUR              	00     # day model simulation starts 
+ENDYEAR                	2015   # year model simulation ends 
+ENDMONTH               	12     # month model simulation ends 
+ENDDAY                 	31     # day model simulation ends 
+FULL_ENERGY            	TRUE  # TRUE = calculate full energy balance;  
+FROZEN_SOIL            	FALSE
+MAX_SNOW_TEMP          	0.5     # day model simulation ends 
+MIN_RAIN_TEMP          	-0.5
+#QUICK_FLUX           TRUE   # 
+
+#######################################################################
+# Forcing Files
+#######################################################################
+FORCING1             /home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_  # Forcing file path and prefix, ending in 
+N_TYPES              4
+FORCE_FORMAT         ASCII  # BINARY or ASCII
+FORCE_TYPE           PREC
+FORCE_TYPE           TMAX
+FORCE_TYPE           TMIN
+FORCE_TYPE           WIND
+FORCE_DT             24
+FORCEYEAR             1981  # Forcing file path and prefix, ending in 
+FORCEMONTH           01    # Month of first forcing record
+FORCEDAY             01    # Day of first forcing record
+FORCEHOUR            00
+GRID_DECIMAL         4     # Number of digits after decimal point in forcing file names
+WIND_H               10.0  # height of wind speed measurement (m)
+MEASURE_H            2.0     # height of humidity measurement (m)
+ALMA_INPUT	         FALSE
+
+#######################################################################
+# Land Surface Parameters
+#######################################################################
+SOIL             /home/vikram/H/basin_1//parameters/vic/soil_param4.txt     # Soil parameter path/file
+ARC_SOIL            FALSE   # TRUE = read soil parameters from ARC/INFO ASCII grids
+BASEFLOW	        ARNO	# ARNO = columns 5-8 are the standard VIC baseflow parameters; NIJSSEN2001 = columns 5-8 of soil file are baseflow parameters from Nijssen et al (2001)
+JULY_TAVG_SUPPLIED	FALSE	# TRUE = final column of the soil parameter file will contain average July air temperature, for computing treeline; this will be ignored if COMPUTE_TREELINE is FALSE; FALSE = compute the treeline based on the average July air temperature of the forcings over the simulation period
+ORGANIC_FRACT	    FALSE	
+VEGLIB              /home/vikram/VIC/VIC_Himalayas/parameters/vic/veglib.him.txt    # Veg library path/file
+VEGPARAM            /home/vikram/VIC/VIC_Himalayas/parameters/vic/veg_param.txt  # Veg parameter path/file
+ROOT_ZONES          2      # Number of root zones (must match format of veg param file)
+VEGPARAM_LAI        FALSE   # TRUE = veg param file contains LAI information; FALSE = veg param file does NOT contain LAI information
+LAI_SRC             FROM_VEGLIB  # FROM_VEGPARAM = read LAI from veg param file; FROM_VEGLIB = read LAI from veg library file
+SNOW_BAND           5  /home/vikram/VIC/VIC_Himalayas/parameters/vic/snowbands.txt  # Number of snow bands; if number of snow bands > 1, you must insert the snow band path/file after the number of bands (e.g. SNOW_BAND 5 my_path/my_snow_band_file)
+PRT_SNOW_BAND   TRUE   
+#######################################################################
+# Output Files and Parameters
+#######################################################################
+RESULT_DIR          /home/vikram/H/basin_1/results_P5_T5/vic//standard/  # result 
+OUT_STEP        0       # Output interval (hours); if 0, OUT_STEP = TIME_STEP
+SKIPYEAR 	    0	# Number of years of output to omit from the output files
+COMPRESS	    FALSE	# TRUE = compress input and output files when done
+BINARY_OUTPUT	FALSE	# TRUE = binary output files
+ALMA_OUTPUT	    FALSE	# TRUE = ALMA-format output files; FALSE = standard VIC units
+MOISTFRACT  	FALSE	# TRUE = output soil moisture as volumetric fraction; FALSE = standard VIC units
+PRT_HEADER	    FALSE   # TRUE = insert a header at the beginning of each output file; FALSE = no header
+#OUTPUT_FORCE	TRUE
+N_OUTFILES	1
+
+  OUTFILE	fluxes	9
+  OUTVAR	OUT_PREC  
+  OUTVAR	OUT_EVAP
+  OUTVAR	OUT_RUNOFF
+  OUTVAR	OUT_BASEFLOW
+  OUTVAR	OUT_SWE
+  OUTVAR	OUT_SNOW_MELT
+  OUTVAR	OUT_SNOWF  
+  OUTVAR	OUT_RAINF
+  OUTVAR    OUT_SOIL_MOIST
