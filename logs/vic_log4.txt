@@ -1,0 +1,1016 @@
+***** VIC Version 4.2.d 2015-June-20 *****
+
+
+ "/home/vikram/H/basin_1//parameters/vic/gparam4.txt" has been
+  opened for reading.... skipping header
+WARNING: To run the model QUICK_FLUX=TRUE, you must define exactly 3 soil thermal nodes.  Currently Nnodes is set to 10.  Setting Nnodes to 3.
+
+***** VIC Version 4.2.d 2015-June-20 - Current Model Settings *****
+
+COMPILE-TIME OPTIONS (set in .h files)
+----------------------------------------
+
+Output to Screen:
+VERBOSE			TRUE
+
+Maximum Array Sizes:
+MAX_BANDS		10
+MAX_FRONTS		 3
+MAX_FROST_AREAS			10
+MAX_LAKE_NODES		20
+MAX_LAYERS		 3
+MAX_NODES		50
+MAX_VEG			12
+
+Snow Constants:
+NEW_SNOW_ALB		0.850000
+SNOW_ALB_ACCUM_A	0.940000
+SNOW_ALB_ACCUM_B	0.580000
+SNOW_ALB_THAW_A		0.820000
+SNOW_ALB_THAW_B		0.460000
+TraceSnow		0.030000
+
+Other Constants:
+LAI_WATER_FACTOR	0.100000
+MAXIT_FE		25
+
+RUN-TIME OPTIONS (set in global parameter file)
+-----------------------------------------------
+Simulation Dimensions:
+NLAYER			3
+EQUAL_AREA		FALSE
+RESOLUTION		-99999.000000
+TIME_STEP		24
+SNOW_STEP		24
+STARTYEAR		1998
+STARTMONTH		1
+STARTDAY		1
+STARTHOUR		0
+ENDYEAR			2015
+ENDMONTH		12
+ENDDAY			31
+
+Simulation Parameters:
+AERO_RESIST_CANSNOW		AR_406_FULL
+BLOWING			FALSE
+CLOSE_ENERGY			FALSE
+COMPUTE_TREELINE		FALSE
+CONTINUEONERROR		TRUE
+CORRPREC		FALSE
+EXP_TRANS		FALSE
+FROZEN_SOIL		FALSE
+FULL_ENERGY		TRUE
+GRND_FLUX_TYPE		GF_410
+LW_TYPE		LW_PRATA
+LW_CLOUD		LW_CLOUD_DEARDORFF
+IMPLICIT		FALSE
+NOFLUX			FALSE
+MTCLIM_SWE_CORR		FALSE
+PLAPSE		TRUE
+QUICK_FLUX		TRUE
+QUICK_SOLVE		FALSE
+SPATIAL_FROST		FALSE
+SPATIAL_SNOW		FALSE
+SNOW_DENSITY		DENS_BRAS
+SW_PREC_THRESH		0.000000
+TFALLBACK		TRUE
+VP_INTERP		TRUE
+VP_ITER		VP_ITER_ALWAYS
+WIND_H			10.000000
+MEASURE_H		2.000000
+NODES			3
+MIN_RAIN_TEMP		-0.500000
+MAX_SNOW_TEMP		0.500000
+MIN_WIND_SPEED		0.100000
+CARBON		FALSE
+SHARE_LAYER_MOIST		TRUE
+Ncanopy		3
+
+Input Forcing Data:
+Forcing File 1:		/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_*
+FORCEYEAR		1981
+FORCEMONTH		1
+FORCEDAY		1
+FORCEHOUR		0
+N_TYPES			4
+FORCE_DT		24
+FORCE_ENDIAN		BIG
+FORCE_FORMAT		ASCII
+GRID_DECIMAL		4
+ALMA_INPUT		FALSE
+
+Input Soil Data:
+Soil file		/home/vikram/H/basin_1//parameters/vic/soil_param4.txt
+BASEFLOW		ARNO
+JULY_TAVG_SUPPLIED		FALSE
+ORGANIC_FRACT		FALSE
+
+Input Veg Data:
+Veg library file	/home/vikram/VIC/VIC_Himalayas/parameters/vic/veglib.him.txt
+VEGLIB_PHOTO		FALSE
+VEGLIB_VEGCOVER		FALSE
+Veg param file		/home/vikram/VIC/VIC_Himalayas/parameters/vic/veg_param.txt
+ROOT_ZONES		2
+VEGPARAM_LAI		FALSE
+LAI_SRC		FROM_VEGLIB
+VEGPARAM_VEGCOVER		FALSE
+VEGCOVER_SRC		FROM_VEGLIB
+VEGPARAM_ALB		FALSE
+ALB_SRC		FROM_VEGLIB
+
+Input Elevation Data:
+SNOW_BAND		5	/home/vikram/VIC/VIC_Himalayas/parameters/vic/snowbands.txt
+
+Input Lake Data:
+LAKES		FALSE
+LAKE_PROFILE		FALSE
+
+Input State File:
+INIT_STATE		FALSE
+
+Output State File:
+SAVE_STATE		FALSE
+
+Output Data:
+Result dir:		/home/vikram/H/basin_1/results_P5_T5/vic//standard/
+OUT_STEP		24
+ALMA_OUTPUT		FALSE
+BINARY_OUTPUT		FALSE
+COMPRESS		FALSE
+MOISTFRACT		FALSE
+OUTPUT_FORCE		FALSE
+PRT_HEADER		FALSE
+PRT_SNOW_BAND		TRUE
+SKIPYEAR		0
+
+Time Step = 24 hour(s)
+Simulation start date = 01/01/1998
+Simulation end date = 31/12/2015
+
+Full Energy...................(1)
+Ground heat flux will be estimated using Liang, Wood and Lettenmaier (1999).
+Use Frozen Soil Model.........(0)
+.... Using the explicit solution for the soil heat equation.
+.... Thermal nodes are linearly distributed with depth (except top two nodes).
+Run Snow Model Using a Time Step of 24 hours
+Compress Output Files.........(0)
+Correct Precipitation.........(0)
+
+Using 5 Snow Bands
+Using 2 Root Zones
+Model output is in standard ASCII format.
+
+
+ "/home/vikram/H/basin_1//parameters/vic/gparam4.txt" has been
+  opened for reading.... skipping header
+
+
+ "/home/vikram/H/basin_1//parameters/vic/soil_param4.txt" has been
+  opened for reading.
+
+
+ "/home/vikram/VIC/VIC_Himalayas/parameters/vic/veglib.him.txt" has been
+  opened for reading.... skipping header
+
+
+ "/home/vikram/VIC/VIC_Himalayas/parameters/vic/veg_param.txt" has been
+  opened for reading.
+
+
+ "/home/vikram/VIC/VIC_Himalayas/parameters/vic/snowbands.txt" has been
+  opened for reading.
+
+cell: 7735,  lat: 32.1250, long: 78.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.1250_78.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.1250_78.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 4401.636719 not equal to grid_cell average elevation 4406.624512; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	9	-0.0369	-0.0041
+Maximum Energy Error:	10	-0.0560	-0.0093
+Maximum Energy Error:	11	-0.0752	-0.0153
+Maximum Energy Error:	13	0.0999	-0.0095
+Maximum Energy Error:	14	-0.1339	-0.0183
+Maximum Energy Error:	19	0.1632	-0.0071
+Maximum Energy Error:	84	0.1665	-0.0204
+Maximum Energy Error:	89	0.1690	-0.0158
+Maximum Energy Error:	90	0.1768	-0.0137
+Maximum Energy Error:	91	0.2200	-0.0111
+Maximum Energy Error:	450	0.2232	0.0057
+Maximum Energy Error:	787	0.2581	0.0062
+Maximum Energy Error:	805	0.2629	0.0070
+Maximum Energy Error:	825	0.2673	0.0095
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = 0.0076
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7736,  lat: 32.1250, long: 78.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.1250_78.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.1250_78.8750" has been
+  truncated or created for writing.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	44	-0.0021	-0.0000
+Maximum Energy Error:	159	-0.0021	-0.0000
+Maximum Energy Error:	278	-0.0032	-0.0000
+Maximum Energy Error:	521	-0.0036	-0.0001
+Maximum Energy Error:	3933	-0.0041	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7737,  lat: 32.1250, long: 79.1250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.1250_79.1250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.1250_79.1250" has been
+  truncated or created for writing.
+Warning: average band elevation 4764.270508 not equal to grid_cell average elevation 4773.821777; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	96	-0.0011	-0.0000
+Maximum Energy Error:	116	-0.0018	-0.0001
+Maximum Energy Error:	125	-0.0023	-0.0001
+Maximum Energy Error:	133	-0.0030	-0.0001
+Maximum Energy Error:	385	-0.0046	-0.0001
+Maximum Energy Error:	4140	-0.0051	-0.0001
+Maximum Energy Error:	4513	-0.0056	-0.0001
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0001
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7738,  lat: 32.1250, long: 79.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.1250_79.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.1250_79.3750" has been
+  truncated or created for writing.
+Warning: average band elevation 4514.833008 not equal to grid_cell average elevation 4525.471680; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	48	-0.0015	-0.0000
+Maximum Energy Error:	93	-0.0022	-0.0001
+Maximum Energy Error:	96	-0.0029	-0.0001
+Maximum Energy Error:	116	-0.0031	-0.0001
+Maximum Energy Error:	576	-1.6952	-0.0030
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0003
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 29990
+Total number of fallbacks in soil T profile: 0
+
+cell: 7739,  lat: 32.1250, long: 79.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.1250_79.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.1250_79.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 4803.860352 not equal to grid_cell average elevation 4808.833496; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	116	-0.0037	-0.0001
+Maximum Energy Error:	576	-4.8134	-0.0084
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0013
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 30880
+Total number of fallbacks in soil T profile: 0
+
+cell: 7740,  lat: 32.1250, long: 79.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.1250_79.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.1250_79.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 5280.827148 not equal to grid_cell average elevation 5277.116699; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	98	-0.0030	-0.0000
+Maximum Energy Error:	576	-6.9074	-0.0121
+Maximum Energy Error:	1677	-7.8836	-0.0089
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0032
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 38116
+Total number of fallbacks in soil T profile: 0
+
+cell: 7891,  lat: 32.3750, long: 77.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_77.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_77.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 4880.506348 not equal to grid_cell average elevation 4898.199707; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	497	-0.0023	-0.0000
+Maximum Energy Error:	546	-0.0035	-0.0000
+Maximum Energy Error:	2367	-0.0039	-0.0000
+Maximum Energy Error:	4677	-0.0039	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7892,  lat: 32.3750, long: 77.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_77.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_77.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 4827.175293 not equal to grid_cell average elevation 4844.098145; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	154	-0.0017	-0.0000
+Maximum Energy Error:	159	-0.0023	-0.0000
+Maximum Energy Error:	515	-0.0027	-0.0000
+Maximum Energy Error:	632	-0.0030	-0.0000
+Maximum Energy Error:	638	-0.0039	-0.0000
+Maximum Energy Error:	2306	-0.0064	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7893,  lat: 32.3750, long: 78.1250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_78.1250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_78.1250" has been
+  truncated or created for writing.
+Warning: average band elevation 5141.863770 not equal to grid_cell average elevation 5152.005371; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	272	-0.0019	-0.0000
+Maximum Energy Error:	273	-0.0019	-0.0000
+Maximum Energy Error:	501	-0.0029	-0.0000
+Maximum Energy Error:	515	-0.0031	-0.0000
+Maximum Energy Error:	2338	-0.0033	-0.0000
+Maximum Energy Error:	2456	-0.0037	-0.0000
+Maximum Energy Error:	6517	-0.0042	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7894,  lat: 32.3750, long: 78.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_78.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_78.3750" has been
+  truncated or created for writing.
+Warning: average band elevation 5221.671875 not equal to grid_cell average elevation 5233.974121; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	159	-0.0023	-0.0000
+Maximum Energy Error:	166	-0.0026	-0.0001
+Maximum Energy Error:	253	-0.0038	-0.0001
+Maximum Energy Error:	2339	-0.0039	-0.0001
+Maximum Energy Error:	2429	-0.0040	-0.0001
+Maximum Energy Error:	4678	-0.0164	-0.0001
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7895,  lat: 32.3750, long: 78.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_78.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_78.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 4843.827148 not equal to grid_cell average elevation 4851.721191; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	41	-0.0031	-0.0001
+Maximum Energy Error:	42	-0.0034	-0.0002
+Maximum Energy Error:	1167	-0.0044	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7896,  lat: 32.3750, long: 78.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_78.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_78.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 5266.640137 not equal to grid_cell average elevation 5268.074219; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	113	-0.0028	-0.0001
+Maximum Energy Error:	133	-0.0035	-0.0001
+Maximum Energy Error:	855	-0.0035	-0.0001
+Maximum Energy Error:	1968	-0.0038	-0.0001
+Maximum Energy Error:	2991	-0.0166	-0.0001
+Maximum Energy Error:	5062	-0.0171	-0.0001
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0001
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7897,  lat: 32.3750, long: 79.1250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_79.1250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_79.1250" has been
+  truncated or created for writing.
+Warning: average band elevation 5243.002441 not equal to grid_cell average elevation 5248.525879; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	97	-0.0024	-0.0000
+Maximum Energy Error:	126	-0.0032	-0.0001
+Maximum Energy Error:	264	-0.0041	-0.0001
+Maximum Energy Error:	865	-0.0045	-0.0001
+Maximum Energy Error:	3013	-0.0080	-0.0001
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0001
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 7898,  lat: 32.3750, long: 79.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_79.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_79.3750" has been
+  truncated or created for writing.
+Warning: average band elevation 5089.299805 not equal to grid_cell average elevation 5098.542480; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	92	-0.0013	-0.0000
+Maximum Energy Error:	98	-0.0022	-0.0001
+Maximum Energy Error:	125	-0.0022	-0.0001
+Maximum Energy Error:	576	-2.0341	-0.0036
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0004
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 29990
+Total number of fallbacks in soil T profile: 0
+
+cell: 7899,  lat: 32.3750, long: 79.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.3750_79.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.3750_79.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 5239.229492 not equal to grid_cell average elevation 5242.836914; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	98	-0.0025	-0.0000
+Maximum Energy Error:	127	-0.0028	-0.0001
+Maximum Energy Error:	266	-0.0037	-0.0001
+Maximum Energy Error:	576	-0.8632	-0.0016
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0002
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 29990
+Total number of fallbacks in soil T profile: 0
+
+cell: 8051,  lat: 32.6250, long: 77.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_77.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_77.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 5208.555176 not equal to grid_cell average elevation 5216.163086; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	253	-0.0042	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8052,  lat: 32.6250, long: 77.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_77.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_77.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 5303.552246 not equal to grid_cell average elevation 5317.717773; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	154	-0.0018	-0.0000
+Maximum Energy Error:	515	-0.0019	-0.0000
+Maximum Energy Error:	546	-0.0039	-0.0000
+Maximum Energy Error:	1000	-0.0039	-0.0000
+Maximum Energy Error:	2305	-0.0039	-0.0000
+Maximum Energy Error:	4649	-0.0040	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8053,  lat: 32.6250, long: 78.1250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_78.1250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_78.1250" has been
+  truncated or created for writing.
+Warning: average band elevation 5309.265137 not equal to grid_cell average elevation 5318.908691; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	172	-0.0037	-0.0000
+Maximum Energy Error:	519	-0.0043	-0.0000
+Maximum Energy Error:	1235	-0.0355	-0.0001
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8054,  lat: 32.6250, long: 78.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_78.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_78.3750" has been
+  truncated or created for writing.
+Warning: average band elevation 5208.291504 not equal to grid_cell average elevation 5218.992188; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	4	-0.0364	-0.0091
+Maximum Energy Error:	6	-0.0421	-0.0179
+Maximum Energy Error:	8	0.0492	-0.0064
+Maximum Energy Error:	13	-0.0508	-0.0115
+Maximum Energy Error:	14	-0.0535	-0.0145
+Maximum Energy Error:	17	0.0571	-0.0089
+Maximum Energy Error:	18	0.0618	-0.0050
+Maximum Energy Error:	29	0.0755	0.0072
+Maximum Energy Error:	51	0.0952	-0.0003
+Maximum Energy Error:	77	0.1205	-0.0042
+Maximum Energy Error:	90	0.1393	-0.0026
+Maximum Energy Error:	91	0.1441	-0.0010
+Maximum Energy Error:	106	0.1524	-0.0011
+Maximum Energy Error:	107	0.1968	0.0008
+Maximum Energy Error:	109	0.2275	0.0047
+Maximum Energy Error:	131	0.2502	0.0114
+Maximum Energy Error:	3773	0.2640	0.0174
+Maximum Energy Error:	5982	0.2651	0.0172
+Maximum Energy Error:	5983	0.2719	0.0172
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = 0.0173
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8055,  lat: 32.6250, long: 78.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_78.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_78.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 4972.820312 not equal to grid_cell average elevation 4981.658691; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	43	-0.0015	-0.0000
+Maximum Energy Error:	272	-0.0035	-0.0000
+Maximum Energy Error:	1712	-0.0035	-0.0000
+Maximum Energy Error:	2304	-0.0040	-0.0000
+Maximum Energy Error:	6539	-0.0045	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8056,  lat: 32.6250, long: 78.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_78.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_78.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 5034.151367 not equal to grid_cell average elevation 5035.168457; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	45	-0.0016	-0.0000
+Maximum Energy Error:	116	-0.0021	-0.0001
+Maximum Energy Error:	263	-0.0037	-0.0001
+Maximum Energy Error:	264	-0.0041	-0.0001
+Maximum Energy Error:	520	-0.0042	-0.0001
+Maximum Energy Error:	3036	-0.0043	-0.0000
+Maximum Energy Error:	3922	-0.0052	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8058,  lat: 32.6250, long: 79.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.6250_79.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.6250_79.3750" has been
+  truncated or created for writing.
+Warning: average band elevation 5356.224609 not equal to grid_cell average elevation 5363.790527; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	125	-0.0013	-0.0000
+Maximum Energy Error:	167	-0.0025	-0.0000
+Maximum Energy Error:	288	0.0110	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8212,  lat: 32.8750, long: 77.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.8750_77.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.8750_77.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 5161.976074 not equal to grid_cell average elevation 5177.340820; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	486	-0.0019	-0.0000
+Maximum Energy Error:	499	-0.0024	-0.0000
+Maximum Energy Error:	1233	-0.0031	-0.0000
+Maximum Energy Error:	1600	-0.0037	-0.0000
+Maximum Energy Error:	2094	-0.0040	-0.0000
+Maximum Energy Error:	6145	-0.0041	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8213,  lat: 32.8750, long: 78.1250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.8750_78.1250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.8750_78.1250" has been
+  truncated or created for writing.
+Warning: average band elevation 5189.250000 not equal to grid_cell average elevation 5196.422363; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	283	-0.0028	-0.0000
+Maximum Energy Error:	1745	-0.0035	-0.0000
+Maximum Energy Error:	2006	-0.0039	-0.0000
+Maximum Energy Error:	2332	-0.0042	-0.0000
+Maximum Energy Error:	6136	-0.0044	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8214,  lat: 32.8750, long: 78.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.8750_78.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.8750_78.3750" has been
+  truncated or created for writing.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	4	-0.2192	-0.0548
+Maximum Energy Error:	10	-0.2957	-0.0572
+Maximum Energy Error:	14	-0.3783	-0.0948
+Maximum Energy Error:	48	-0.3885	-0.0530
+Maximum Energy Error:	77	0.4164	-0.0574
+Maximum Energy Error:	89	0.4425	-0.0512
+Maximum Energy Error:	90	0.7674	-0.0421
+Maximum Energy Error:	95	0.7992	-0.0258
+Maximum Energy Error:	123	0.8131	0.0288
+Maximum Energy Error:	460	0.8153	0.0298
+Maximum Energy Error:	821	0.9394	0.0336
+Maximum Energy Error:	826	0.9751	0.0373
+Maximum Energy Error:	1210	1.0170	0.0385
+Maximum Energy Error:	1585	1.2574	0.0421
+Maximum Energy Error:	1950	1.3468	0.0451
+Maximum Energy Error:	3773	1.4223	0.0365
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = 0.0476
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8215,  lat: 32.8750, long: 78.6250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_32.8750_78.6250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_32.8750_78.6250" has been
+  truncated or created for writing.
+Warning: average band elevation 5089.189453 not equal to grid_cell average elevation 5095.093262; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	166	-0.0020	-0.0000
+Maximum Energy Error:	272	-0.0022	-0.0000
+Maximum Energy Error:	509	-0.0023	-0.0000
+Maximum Energy Error:	519	-0.0026	-0.0001
+Maximum Energy Error:	590	-0.0027	-0.0001
+Maximum Energy Error:	855	-0.0045	-0.0000
+Maximum Energy Error:	3931	-0.0053	-0.0000
+Maximum Energy Error:	6477	-0.0068	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8372,  lat: 33.1250, long: 77.8750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_33.1250_77.8750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_33.1250_77.8750" has been
+  truncated or created for writing.
+Warning: average band elevation 5090.473145 not equal to grid_cell average elevation 5103.075195; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	271	-0.0011	-0.0000
+Maximum Energy Error:	278	-0.0040	-0.0000
+Maximum Energy Error:	3077	-0.0118	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8373,  lat: 33.1250, long: 78.1250
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_33.1250_78.1250" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_33.1250_78.1250" has been
+  truncated or created for writing.
+Warning: average band elevation 5434.055664 not equal to grid_cell average elevation 5441.676758; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	253	-0.0019	-0.0000
+Maximum Energy Error:	266	-0.0026	-0.0000
+Maximum Energy Error:	267	0.0035	-0.0000
+Maximum Energy Error:	520	-0.0060	-0.0001
+Maximum Energy Error:	1710	0.0080	-0.0000
+Total Cumulative Water Error for Grid Cell = -0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
+
+cell: 8374,  lat: 33.1250, long: 78.3750
+
+
+ "/home/vikram/VIC/VIC_Himalayas/forcings_scen_scaled/P5_T5/forcing_33.1250_78.3750" has been
+  opened for reading.
+
+
+ "/home/vikram/H/basin_1/results_P5_T5/vic//standard//fluxes_33.1250_78.3750" has been
+  truncated or created for writing.
+Warning: average band elevation 5223.640137 not equal to grid_cell average elevation 5231.619141; setting grid cell elevation to average band elevation.
+Initializing Forcing Data
+
+Read meteorological forcing file
+Model State Initialization
+Running Model
+Maximum Energy Error:	253	-0.0028	-0.0000
+Maximum Energy Error:	520	-0.0055	-0.0000
+Total Cumulative Water Error for Grid Cell = 0.0000
+Total Cumulative Energy Error for Grid Cell = -0.0000
+Total number of fallbacks in Tfoliage: 0
+Total number of fallbacks in Tcanopy: 0
+Total number of fallbacks in Tsnowsurf: 0
+Total number of fallbacks in Tsurf: 0
+Total number of fallbacks in soil T profile: 0
