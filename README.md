@@ -1,6 +1,7 @@
 # VIC-glacier model
 # General Notes
-VIC-glacier model is an integration glacier model with Variable infiltration capacity (VIC) Hydrological model. The glacier model implements a temperature index approach for calculating melt from glaciers and a volume area scaling equation for dynamic evolution of glacier with time. The details of the model are discussed in manuscript for this model.
+VIC-glacier model is an integration glacier model with Variable infiltration capacity (VIC) Hydrological model. The glacier model implements a temperature index approach for calculating melt from glaciers and a volume area scaling equation for dynamic evolution of glacier with time. 
+
 # Files
 “track_snowmelt.m” : This file implements snowmelt tracking algorithm based on Li et al 2013.      
 “tindex_model.m”: Implements the glacier model as discussed in methods section of main paper.
